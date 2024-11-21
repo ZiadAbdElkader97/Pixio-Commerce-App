@@ -1,0 +1,149 @@
+/* Responsive Screen:
+=======================
+
+/* Mobile Devices */
+@media (max-width: 420px) {
+  #navbar-search-input {
+    padding: 4px 8px;
+  }
+  #navbar-search-icon {
+    width: 20px;
+  }
+  #navbar-menu {
+    font-size: 14px;
+    gap: 15px;
+  }
+  #home-content {
+    top: 20px;
+    left: 15px;
+  }
+  #pixio-p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  #welcome-heading {
+    font-size: 14px;
+  }
+  #welcome-p {
+    font-size: 12px;
+  }
+  #section-card {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  #category-card {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  #category-content-p {
+    font-size: 17px;
+  }
+  #category-content-p2 {
+    font-size: 15px;
+  }
+  #footer-copyright {
+    font-size: 14px;
+  }
+  #order-btns button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  #details-cart {
+    flex-direction: column;
+  }
+  #main-cart {
+    flex-direction: column;
+  }
+  #cart-section-p {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 600px) {
+  #welcome-heading {
+    font-size: 16px;
+  }
+  #welcome-p {
+    font-size: 14px;
+  }
+  #home-content {
+    top: 50px;
+    left: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  #shop-now-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+  #category-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* medium Screens Max Width 1024px */
+@media (max-width: 1024px) {
+  #navbar-login-button {
+    font-size: 15px;
+  }
+  #cate-heading {
+    font-size: 14px;
+  }
+  #cate-list {
+    font-size: 14px;
+  }
+  #shop-now-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  #category-content {
+    top: 50px;
+    left: 20px;
+  }
+  #cart-pro-name {
+    font-size: 14px;
+  }
+  #checkout-section {
+    gap: 7px;
+  }
+  #checkout-section-one {
+    width: 100%;
+  }
+  #checkout-section-two {
+    width: 100%;
+  }
+}
+/* medium Screens Max Width 1023px */
+@media (max-width: 1023px) {
+  #cart-section {
+    margin: 0;
+  }
+}
+/* from 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #cart-section {
+    flex-direction: column;
+  }
+  #cart-section-one {
+    width: 100%;
+  }
+  #cart-section-two {
+    width: 100%;
+  }
+}
+
+/* from 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #welcome-heading {
+    font-size: 22px;
+  }
+  #welcome-p {
+    font-size: 16px;
+  }
+  #section-card {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
