@@ -145,9 +145,7 @@ export default function Checkout({ setOrder }) {
               className="flex items-center justify-between cursor-pointer"
               onClick={() => setPaymentToggle(!paymentToggle)}
             >
-              <h3 className="text-lg font-semibold mb-2">
-                Billing Information
-              </h3>
+              <h3 className="text-lg font-semibold mb-2">Payment Method</h3>
               {paymentToggle ? <FaAngleDown /> : <FaAngleUp />}
             </div>
             <div className={`space-y-4 ${paymentToggle ? "" : "hidden"}`}>
@@ -156,20 +154,32 @@ export default function Checkout({ setOrder }) {
                 <input
                   type="radio"
                   name="payment"
+                  id="cash"
                   checked={paymentMethod === "cod"}
                   onChange={() => setPaymentMethod("cod")}
                 />
-                <label className="block text-gray-700">Cash On Delivery</label>
+                <label
+                  htmlFor="cash"
+                  className="block text-gray-700 cursor-pointer"
+                >
+                  Cash On Delivery
+                </label>
               </div>
               {/* Debit Card */}
               <div className="flex items-center mb-2 gap-1">
                 <input
                   type="radio"
                   name="payment"
+                  id="debit"
                   checked={paymentMethod === "dc"}
                   onChange={() => setPaymentMethod("dc")}
                 />
-                <label className="block text-gray-700">Debit Card</label>
+                <label
+                  htmlFor="debit"
+                  className="block text-gray-700 cursor-pointer"
+                >
+                  Debit Card
+                </label>
               </div>
               {paymentMethod === "dc" && (
                 <div className="bg-gray-100 p-4 rounded-lg mb-4">
